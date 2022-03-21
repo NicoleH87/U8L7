@@ -26,6 +26,7 @@ public class Encryptor {
                 if (count < str.length())
                 {
                     letterBlock[r][c] = str.substring(count, count + 1);
+                    count++;
                 }
                 else
                 {
@@ -176,7 +177,7 @@ public class Encryptor {
                     }
                 }
             }
-            encryptBlockLeft();
+            encryptBlockRight();
             for (int r = 0; r < numRows; r++)
             {
                 for (int c = 0; c < numCols; c++)

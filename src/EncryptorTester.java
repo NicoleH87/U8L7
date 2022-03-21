@@ -8,10 +8,10 @@ public class EncryptorTester {
         System.out.println();
         Encryptor test2 = new Encryptor(4, 5, 3);
         String message2 = test2.encryptMessageLeft("We have a problem. I hope this works.");
-        System.out.println(message2);
-        System.out.println(test2.decryptMessageLeft(message2));
+        System.out.println("Message: " + message2);
+        System.out.println("Decrypt: " + test2.decryptMessageLeft(message2));
 
-        
+
         String[][] letterBlock = {{"a", "b", "c", "d"},
                                     {"e", "f", "g", "h"},
                                     {"i", "j", "k", "l"}};
